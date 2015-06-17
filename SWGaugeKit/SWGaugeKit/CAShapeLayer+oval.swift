@@ -1,6 +1,6 @@
 //
 //  CAShapeLayer+oval.swift
-//  SuperBody
+//  SWGauge
 //
 //  Created by Petr Korolev on 03/06/15.
 //  Copyright (c) 2015 Petr Korolev. All rights reserved.

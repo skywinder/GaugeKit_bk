@@ -1,6 +1,6 @@
 //
 //  MainViewController.swift
-//  SuperBody
+//  SWGauge
 //
 //  Created by Petr Korolev on 21/05/15.
 //  Copyright (c) 2015 Petr Korolev. All rights reserved.
@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-      
+
     }
 
     @IBAction func switchChanged(sender: UISwitch) {
