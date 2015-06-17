@@ -105,7 +105,7 @@
                                         </variation>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-7b-EpV" userLabel="Gauge Right" customClass="GaugeHalf" customModule="SWGaugeKit">
-                                        <rect key="frame" x="328" y="115" width="224" height="268"/>
+                                        <rect key="frame" x="328" y="-19" width="224" height="536"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fV1-7b-EpV" secondAttribute="height" multiplier="1:2" id="Va0-Cm-JZi"/>
@@ -165,7 +165,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-cv-5KY" userLabel="Gauge Left" customClass="GaugeHalf" customModule="SWGaugeKit">
-                                        <rect key="frame" x="20" y="116" width="224" height="268"/>
+                                        <rect key="frame" x="20" y="-18" width="224" height="536"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="XU6-iK-3MX"/>
@@ -236,10 +236,11 @@
                                     <constraint firstItem="Xql-cv-5KY" firstAttribute="leading" secondItem="h2H-B1-nqW" secondAttribute="leading" constant="8" id="eVp-cc-LKK"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="height" secondItem="h2H-B1-nqW" secondAttribute="height" multiplier="1:2" id="f2m-iw-T3T"/>
                                     <constraint firstAttribute="width" constant="400" id="hPG-kV-fYD"/>
-                                    <constraint firstItem="Xql-cv-5KY" firstAttribute="height" secondItem="0Ob-Uc-gqV" secondAttribute="height" id="ige-AP-jty"/>
+                                    <constraint firstItem="Xql-cv-5KY" firstAttribute="height" secondItem="0Ob-Uc-gqV" secondAttribute="height" multiplier="2:1" id="ige-AP-jty"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="height" secondItem="fV1-7b-EpV" secondAttribute="height" id="kJP-aj-br0"/>
                                     <constraint firstAttribute="trailing" secondItem="fV1-7b-EpV" secondAttribute="trailing" constant="8" id="pfH-bp-rcc"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="leading" secondItem="Xql-cv-5KY" secondAttribute="trailing" constant="-30" id="rZ2-t1-FL1"/>
+                                    <constraint firstItem="fV1-7b-EpV" firstAttribute="height" secondItem="Xql-cv-5KY" secondAttribute="height" id="tF1-ss-fCt"/>
                                     <constraint firstAttribute="height" constant="300" id="wgz-zN-EJ9"/>
                                     <constraint firstItem="H65-f6-Jwu" firstAttribute="centerX" secondItem="0Ob-Uc-gqV" secondAttribute="centerX" id="xFH-4q-V3h"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="centerY" secondItem="yI1-eB-yrd" secondAttribute="centerY" id="xeb-mW-hb5"/>
@@ -260,6 +261,7 @@
                                         <exclude reference="2xc-VX-bm7"/>
                                         <exclude reference="4Q7-c9-Fww"/>
                                         <exclude reference="K2d-OX-cq5"/>
+                                        <exclude reference="kJP-aj-br0"/>
                                         <exclude reference="rZ2-t1-FL1"/>
                                         <exclude reference="MTp-Qo-kCR"/>
                                         <exclude reference="Nvx-tk-DI2"/>
