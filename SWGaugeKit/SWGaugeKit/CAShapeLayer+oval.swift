@@ -27,19 +27,17 @@ extension CAShapeLayer {
     ) -> CAShapeLayer {
 
         let arc = CAShapeLayer()
-        if let bounds = bounds{
+        if let bounds = bounds {
             let rect = CGRectInset(bounds, CGFloat(lineWidth / 2.0), CGFloat(lineWidth / 2.0))
             if isCircle {
-                let arcDiameter:CGFloat =  min(bounds.width, bounds.height) - 2 * lineWidth
+                let arcDiameter: CGFloat = min(bounds.width, bounds.height) - 2 * lineWidth
                 let X = CGRectGetMidX(bounds)
                 let Y = CGRectGetMidY(bounds)
                 arc.path = UIBezierPath(ovalInRect: CGRectMake((X - (arcDiameter / 2)), (Y - (arcDiameter / 2)), arcDiameter, arcDiameter)).CGPath
-            }
-            else{
+            } else {
                 arc.path = UIBezierPath(ovalInRect: rect).CGPath
             }
-        }
-        else{
+        } else {
             arc.path = path
         }
 

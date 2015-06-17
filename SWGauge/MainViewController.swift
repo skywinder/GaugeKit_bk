@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
         rightGauge.rate = CGFloat(sender.value)
 //        scaleLabel.text = "\(sender.value)"
     }
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -40,7 +41,7 @@ class MainViewController: UIViewController {
 
     }
 
-       override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

@@ -36,7 +36,7 @@ public class GaugeHalf: Gauge {
         let gaugeLayer = CAShapeLayer()
 
         //        let rotatedBounds = CGRectMake(10, 10, bounds.height, bounds.width)
-        var newBounds = CGRectMake(bounds.origin.x, bounds.origin.y, bounds.height, bounds.width * 2 - lineWidth )
+        var newBounds = CGRectMake(bounds.origin.x, bounds.origin.y, bounds.height, bounds.width * 2 - lineWidth)
         //        var newBounds = bounds
         if bgLayer == nil {
             bgLayer = CAShapeLayer.getOval(lineWidth, path: nil, strokeStart: 0, strokeEnd: 0.5, strokeColor: _bgStartColor,

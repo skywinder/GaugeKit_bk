@@ -113,7 +113,7 @@ public class Gauge: UIView {
             updateLayerProperties()
         }
     }
-    @IBInspectable var isCircle:Bool = false {
+    @IBInspectable var isCircle: Bool = false {
         didSet {
             updateLayerProperties()
         }
