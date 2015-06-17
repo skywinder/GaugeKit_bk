@@ -23,13 +23,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iTunesArtwork@2x-2-1.png",
+      "filename" : "logo60@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iTunesArtwork@2x-2.png",
+      "filename" : "logo30@3x.png",
       "scale" : "3x"
     },
     {
@@ -55,13 +55,13 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "iTunesArtwork@2x.png",
+      "filename" : "logo152.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "iTunesArtwork@2x-1-1-1-1.png",
+      "filename" : "SWGaugeKit.png",
       "scale" : "2x"
     }
   ],

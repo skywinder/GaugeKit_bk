@@ -30,9 +30,7 @@ class MainViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        if LoginManager.isLoggedIn() == false {
-            self.logOut()
-        }
+      
     }
 
     @IBAction func switchChanged(sender: UISwitch) {
@@ -42,14 +40,7 @@ class MainViewController: UIViewController {
 
     }
 
-    internal func logOut() -> () {
-        let l = "log out"
-        println("l = \(l)")
-        let setViewController = self.storyboard!.instantiateViewControllerWithIdentifier("loginView") as! UINavigationController
-        self.sideMenuViewController.presentViewController(setViewController, animated: true, completion: nil)
-    }
-
-    override func didReceiveMemoryWarning() {
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

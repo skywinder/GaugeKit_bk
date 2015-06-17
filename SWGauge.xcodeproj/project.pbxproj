@@ -13,6 +13,7 @@
 		1CA4562F1B319BFF00F94A9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4562D1B319BFF00F94A9D /* LaunchScreen.xib */; };
 		1CA4563B1B319BFF00F94A9D /* SWGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4563A1B319BFF00F94A9D /* SWGaugeTests.swift */; };
 		1CA456731B31A8A900F94A9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA456721B31A8A900F94A9D /* MainViewController.swift */; };
+		1CA456751B31AC5500F94A9D /* SWGaugeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA456741B31AC5500F94A9D /* SWGaugeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1CA456391B319BFF00F94A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CA4563A1B319BFF00F94A9D /* SWGaugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGaugeTests.swift; sourceTree = "<group>"; };
 		1CA456721B31A8A900F94A9D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1CA456741B31AC5500F94A9D /* SWGaugeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWGaugeKit.framework; path = "SWGaugeKit/build/Debug-iphoneos/SWGaugeKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA456751B31AC5500F94A9D /* SWGaugeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		1CA456161B319BFF00F94A9D = {
 			isa = PBXGroup;
 			children = (
+				1CA456741B31AC5500F94A9D /* SWGaugeKit.framework */,
 				1CA456211B319BFF00F94A9D /* SWGauge */,
 				1CA456371B319BFF00F94A9D /* SWGaugeTests */,
 				1CA456201B319BFF00F94A9D /* Products */,
@@ -342,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SWGaugeKit/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SWGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SWGaugeKit/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SWGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
