@@ -2,6 +2,9 @@
 
 Easy reproduce Apple's style gauges view.
 
+![GaugeKit](https://github.com/skywinder/GaugeKit/blob/develop/Resources/GaugeKit_sreenshot.png)
+
+
 ## Features
 
 - Cusomizible
