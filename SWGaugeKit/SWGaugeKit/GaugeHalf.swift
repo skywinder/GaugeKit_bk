@@ -47,8 +47,14 @@ public class GaugeHalf: Gauge {
 
         if bgGradientLayer == nil {
             bgGradientLayer = CAGradientLayer()
-            bgGradientLayer.startPoint = CGPointMake(0.5, 1)
-            bgGradientLayer.endPoint = CGPointMake(0.5, 0)
+            if isCircle && (layer.bounds.width < layer.bounds.height) {
+                let adjust: CGFloat = (layer.bounds.height - layer.bounds.width) / 2 / layer.bounds.height
+                bgGradientLayer.startPoint = CGPointMake(0.5, 1 - adjust)
+                bgGradientLayer.endPoint = CGPointMake(0.5, adjust)
+            } else {
+                bgGradientLayer.startPoint = CGPointMake(0.5, 1)
+                bgGradientLayer.endPoint = CGPointMake(0.5, 0)
+            }
             bgGradientLayer.colors = [_bgStartColor.CGColor, _bgEndColor.CGColor]
             bgGradientLayer.frame = layer.bounds
             bgGradientLayer.mask = bgLayer
@@ -64,8 +70,14 @@ public class GaugeHalf: Gauge {
 
         if ringGradientLayer == nil {
             ringGradientLayer = CAGradientLayer()
-            ringGradientLayer.startPoint = CGPointMake(0.5, 1)
-            ringGradientLayer.endPoint = CGPointMake(0.5, 0)
+            if isCircle && (layer.bounds.width < layer.bounds.height) {
+                let adjust: CGFloat = (layer.bounds.height - layer.bounds.width) / 2 / layer.bounds.height
+                ringGradientLayer.startPoint = CGPointMake(0.5, 1 - adjust)
+                ringGradientLayer.endPoint = CGPointMake(0.5, adjust)
+            } else {
+                ringGradientLayer.startPoint = CGPointMake(0.5, 1)
+                ringGradientLayer.endPoint = CGPointMake(0.5, 0)
+            }
             ringGradientLayer.colors = [startColor.CGColor, _endColor.CGColor]
             ringGradientLayer.frame = layer.bounds
             ringGradientLayer.mask = ringLayer
