@@ -10,6 +10,10 @@
 		1CA456541B31A0B600F94A9D /* SWGaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA456531B31A0B600F94A9D /* SWGaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CA4565A1B31A0B700F94A9D /* SWGaugeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA4564E1B31A0B600F94A9D /* SWGaugeKit.framework */; };
 		1CA456611B31A0B700F94A9D /* SWGaugeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA456601B31A0B700F94A9D /* SWGaugeKitTests.swift */; };
+		1CA4566B1B31A82F00F94A9D /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4566A1B31A82F00F94A9D /* CAShapeLayer+oval.swift */; };
+		1CA4566F1B31A84800F94A9D /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4566C1B31A84800F94A9D /* Gauge.swift */; };
+		1CA456701B31A84800F94A9D /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4566D1B31A84800F94A9D /* GaugeCircle.swift */; };
+		1CA456711B31A84800F94A9D /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4566E1B31A84800F94A9D /* GaugeHalf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		1CA456591B31A0B700F94A9D /* SWGaugeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWGaugeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA4565F1B31A0B700F94A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CA456601B31A0B700F94A9D /* SWGaugeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGaugeKitTests.swift; sourceTree = "<group>"; };
+		1CA4566A1B31A82F00F94A9D /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
+		1CA4566C1B31A84800F94A9D /* Gauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gauge.swift; sourceTree = "<group>"; };
+		1CA4566D1B31A84800F94A9D /* GaugeCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeCircle.swift; sourceTree = "<group>"; };
+		1CA4566E1B31A84800F94A9D /* GaugeHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeHalf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		1CA456501B31A0B600F94A9D /* SWGaugeKit */ = {
 			isa = PBXGroup;
 			children = (
+				1CA4566C1B31A84800F94A9D /* Gauge.swift */,
+				1CA4566D1B31A84800F94A9D /* GaugeCircle.swift */,
+				1CA4566E1B31A84800F94A9D /* GaugeHalf.swift */,
+				1CA4566A1B31A82F00F94A9D /* CAShapeLayer+oval.swift */,
 				1CA456531B31A0B600F94A9D /* SWGaugeKit.h */,
 				1CA456511B31A0B600F94A9D /* Supporting Files */,
 			);
@@ -209,6 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA4566B1B31A82F00F94A9D /* CAShapeLayer+oval.swift in Sources */,
+				1CA456701B31A84800F94A9D /* GaugeCircle.swift in Sources */,
+				1CA456711B31A84800F94A9D /* GaugeHalf.swift in Sources */,
+				1CA4566F1B31A84800F94A9D /* Gauge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
