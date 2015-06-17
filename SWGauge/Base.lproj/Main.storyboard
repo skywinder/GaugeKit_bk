@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-Q7-9Qx">
-                                <rect key="frame" x="158" y="550" width="284" height="31"/>
+                                <rect key="frame" x="67" y="565" width="383" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="cC9-OU-oQl"/>
                                 </constraints>
@@ -33,11 +33,29 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MUw-Rc-cZr"/>
                                 </connections>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-cM-AIc">
+                                <rect key="frame" x="531" y="564" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e8F-zf-ILb"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6e-Fr-NqT">
+                                <rect key="frame" x="20" y="569" width="41" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-Tn-iEJ">
+                                <rect key="frame" x="456" y="569" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-B1-nqW" userLabel="GaugesView">
-                                <rect key="frame" x="20" y="20" width="560" height="522"/>
+                                <rect key="frame" x="20" y="20" width="560" height="537"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yI1-eB-yrd" userLabel="CircleGaugeSmall" customClass="GaugeCircle" customModule="SWGaugeKit">
-                                        <rect key="frame" x="224" y="187" width="112" height="112"/>
+                                        <rect key="frame" x="224" y="194" width="112" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="yI1-eB-yrd" secondAttribute="height" multiplier="1:1" id="0k9-uR-Ab4"/>
@@ -74,11 +92,11 @@
                                         </variation>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BurnDashboardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H65-f6-Jwu">
-                                        <rect key="frame" x="255" y="217" width="50" height="50"/>
+                                        <rect key="frame" x="260" y="230" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="QgF-pW-ih2"/>
+                                            <constraint firstAttribute="height" constant="40" id="QgF-pW-ih2"/>
                                             <constraint firstAttribute="height" constant="100" id="Shp-Sw-Lop"/>
-                                            <constraint firstAttribute="width" constant="50" id="n5I-IK-cuS"/>
+                                            <constraint firstAttribute="width" constant="40" id="n5I-IK-cuS"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -87,7 +105,7 @@
                                         </variation>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-7b-EpV" userLabel="Gauge Right" customClass="GaugeHalf" customModule="SWGaugeKit">
-                                        <rect key="frame" x="328" y="111" width="224" height="261"/>
+                                        <rect key="frame" x="328" y="115" width="224" height="268"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fV1-7b-EpV" secondAttribute="height" multiplier="1:2" id="Va0-Cm-JZi"/>
@@ -108,10 +126,8 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                                 <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                <color key="value" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundCap" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundCap" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -121,7 +137,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ob-Uc-gqV" userLabel="CircleGauge" customClass="GaugeCircle" customModule="SWGaugeKit">
-                                        <rect key="frame" x="140" y="112" width="280" height="261"/>
+                                        <rect key="frame" x="140" y="116" width="280" height="268"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="1me-xR-gTm"/>
@@ -149,7 +165,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-cv-5KY" userLabel="Gauge Left" customClass="GaugeHalf" customModule="SWGaugeKit">
-                                        <rect key="frame" x="20" y="112" width="224" height="261"/>
+                                        <rect key="frame" x="20" y="116" width="224" height="268"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="XU6-iK-3MX"/>
@@ -182,6 +198,12 @@
                                             </mask>
                                         </variation>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWGaugeKit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-hI-3WU">
+                                        <rect key="frame" x="233" y="8" width="95" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -189,6 +211,7 @@
                                     <constraint firstAttribute="width" secondItem="h2H-B1-nqW" secondAttribute="height" multiplier="1:1" id="2ri-zW-sxG"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="leading" secondItem="Xql-cv-5KY" secondAttribute="trailing" constant="8" id="2xc-VX-bm7"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="width" secondItem="h2H-B1-nqW" secondAttribute="height" multiplier="1:1" id="4Q7-c9-Fww"/>
+                                    <constraint firstItem="a4J-hI-3WU" firstAttribute="top" secondItem="h2H-B1-nqW" secondAttribute="top" constant="8" id="7De-vW-sUo"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="centerY" secondItem="fV1-7b-EpV" secondAttribute="centerY" constant="1" id="91y-Yx-SPw"/>
                                     <constraint firstItem="H65-f6-Jwu" firstAttribute="centerX" secondItem="h2H-B1-nqW" secondAttribute="centerX" id="Aal-7f-EGY"/>
                                     <constraint firstItem="H65-f6-Jwu" firstAttribute="leading" secondItem="Xql-cv-5KY" secondAttribute="trailing" constant="67" id="Bac-I6-uXr"/>
@@ -220,50 +243,64 @@
                                     <constraint firstAttribute="height" constant="300" id="wgz-zN-EJ9"/>
                                     <constraint firstItem="H65-f6-Jwu" firstAttribute="centerX" secondItem="0Ob-Uc-gqV" secondAttribute="centerX" id="xFH-4q-V3h"/>
                                     <constraint firstItem="0Ob-Uc-gqV" firstAttribute="centerY" secondItem="yI1-eB-yrd" secondAttribute="centerY" id="xeb-mW-hb5"/>
+                                    <constraint firstAttribute="centerX" secondItem="a4J-hI-3WU" secondAttribute="centerX" constant="-0.5" id="xgJ-Dy-4OR"/>
                                     <constraint firstItem="H65-f6-Jwu" firstAttribute="top" secondItem="h2H-B1-nqW" secondAttribute="top" constant="217" id="y4O-il-TA5"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="wgz-zN-EJ9"/>
-                                        <exclude reference="hPG-kV-fYD"/>
                                         <exclude reference="2ri-zW-sxG"/>
-                                        <exclude reference="cW0-mP-yVb"/>
+                                        <exclude reference="hPG-kV-fYD"/>
+                                        <exclude reference="wgz-zN-EJ9"/>
                                         <exclude reference="KbR-vl-VkR"/>
-                                        <exclude reference="eVp-cc-LKK"/>
-                                        <exclude reference="RiZ-Zh-6IB"/>
                                         <exclude reference="Qu5-lH-SM4"/>
+                                        <exclude reference="RiZ-Zh-6IB"/>
                                         <exclude reference="Wha-gf-Nsd"/>
+                                        <exclude reference="cW0-mP-yVb"/>
+                                        <exclude reference="eVp-cc-LKK"/>
                                         <exclude reference="2xc-VX-bm7"/>
-                                        <exclude reference="K2d-OX-cq5"/>
                                         <exclude reference="4Q7-c9-Fww"/>
+                                        <exclude reference="K2d-OX-cq5"/>
                                         <exclude reference="rZ2-t1-FL1"/>
-                                        <exclude reference="Nvx-tk-DI2"/>
                                         <exclude reference="MTp-Qo-kCR"/>
+                                        <exclude reference="Nvx-tk-DI2"/>
                                         <exclude reference="Bac-I6-uXr"/>
                                         <exclude reference="y4O-il-TA5"/>
                                         <exclude reference="TSj-im-oD4"/>
                                     </mask>
                                 </variation>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-cM-AIc">
-                                <rect key="frame" x="448" y="549" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e8F-zf-ILb"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6dm-cM-AIc" firstAttribute="centerY" secondItem="CMJ-Tn-iEJ" secondAttribute="centerY" id="HbL-eq-omh"/>
+                            <constraint firstItem="6dm-cM-AIc" firstAttribute="trailing" secondItem="h2H-B1-nqW" secondAttribute="trailing" id="Vh1-z1-2PM"/>
+                            <constraint firstItem="f6e-Fr-NqT" firstAttribute="leading" secondItem="h2H-B1-nqW" secondAttribute="leading" id="VoD-bK-vuH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f6e-Fr-NqT" secondAttribute="bottom" constant="8" symbolic="YES" id="Z9F-Io-dOO"/>
                             <constraint firstItem="6dm-cM-AIc" firstAttribute="leading" secondItem="4Kh-Q7-9Qx" secondAttribute="trailing" constant="8" id="Znn-p3-rgO"/>
                             <constraint firstItem="6dm-cM-AIc" firstAttribute="centerY" secondItem="4Kh-Q7-9Qx" secondAttribute="centerY" constant="-0.5" id="alC-H9-oOR"/>
+                            <constraint firstItem="6dm-cM-AIc" firstAttribute="leading" secondItem="CMJ-Tn-iEJ" secondAttribute="trailing" constant="8" id="cla-8Y-wur"/>
                             <constraint firstAttribute="bottom" secondItem="h2H-B1-nqW" secondAttribute="bottom" constant="58" id="dd0-2j-eRo"/>
                             <constraint firstItem="4Kh-Q7-9Qx" firstAttribute="top" secondItem="h2H-B1-nqW" secondAttribute="bottom" constant="8" symbolic="YES" id="f21-QT-8e2"/>
+                            <constraint firstItem="4Kh-Q7-9Qx" firstAttribute="leading" secondItem="f6e-Fr-NqT" secondAttribute="trailing" constant="8" id="fSX-NX-ahL"/>
                             <constraint firstItem="h2H-B1-nqW" firstAttribute="top" secondItem="2NQ-2R-cQ4" secondAttribute="top" constant="20" symbolic="YES" id="fim-Xe-164"/>
+                            <constraint firstItem="6dm-cM-AIc" firstAttribute="top" secondItem="h2H-B1-nqW" secondAttribute="bottom" constant="7" id="hBg-Nw-h8P"/>
+                            <constraint firstItem="f6e-Fr-NqT" firstAttribute="top" secondItem="h2H-B1-nqW" secondAttribute="bottom" constant="12" id="hfF-mC-uVI"/>
                             <constraint firstItem="h2H-B1-nqW" firstAttribute="centerX" secondItem="2NQ-2R-cQ4" secondAttribute="centerX" id="kzi-wj-aLm"/>
                             <constraint firstItem="h2H-B1-nqW" firstAttribute="width" secondItem="4Kh-Q7-9Qx" secondAttribute="width" multiplier="2:1" id="rWo-7x-MEC"/>
+                            <constraint firstItem="4Kh-Q7-9Qx" firstAttribute="centerY" secondItem="f6e-Fr-NqT" secondAttribute="centerY" constant="-0.5" id="uen-Yu-sas"/>
+                            <constraint firstItem="CMJ-Tn-iEJ" firstAttribute="leading" secondItem="4Kh-Q7-9Qx" secondAttribute="trailing" constant="8" symbolic="YES" id="vlh-In-grx"/>
                             <constraint firstItem="h2H-B1-nqW" firstAttribute="leading" secondItem="2NQ-2R-cQ4" secondAttribute="leadingMargin" constant="4" id="wpl-DK-ubh"/>
                             <constraint firstItem="h2H-B1-nqW" firstAttribute="centerX" secondItem="4Kh-Q7-9Qx" secondAttribute="centerX" id="yx2-WQ-cvy"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dd0-2j-eRo"/>
+                                <exclude reference="rWo-7x-MEC"/>
+                                <exclude reference="yx2-WQ-cvy"/>
+                                <exclude reference="Znn-p3-rgO"/>
+                                <exclude reference="alC-H9-oOR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="gauge" destination="0Ob-Uc-gqV" id="EFi-Kl-JB7"/>
@@ -278,6 +315,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BurnDashboardIcon" width="853" height="79"/>
+        <image name="BurnDashboardIcon" width="72" height="83"/>
     </resources>
 </document>
